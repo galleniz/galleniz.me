@@ -1,0 +1,135 @@
+/* Estilo general */
+
+/* Estilos para PC */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333333;
+  font-size: 100%;
+}
+html {
+  height: 100%;
+}
+
+
+
+img.funkin_papu_imagen_principal {
+  border-radius: 75px;
+  width: 150px;
+}
+header h1 {
+  margin-top: -100px;
+  margin-left: 170px;
+}
+header h2 {
+  margin-left: 175px;
+}
+header nav {
+ margin-top: 20px;
+ 
+}
+/* Estilo del encabezado */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #cccccc;
+  padding: 20px;
+  top: 0;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #333333;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo de las secciones */
+section {
+  margin: 50px 0;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Estilo del formulario de contacto */
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  border: 1px solid #cccccc;
+  padding: 10px;
+  width: 100%;
+}
+
+form textarea {
+  height: 150px;
+}
+
+form input[type="submit"] {
+  background-color: #333333;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #555555;
+  cursor: pointer;
+}
+li.img a{
+margin-left: 10px;
+margin-top: 20px;
+}
+li img {
+border-radius: 5px;
+width: 40px;
+vertical-align: middle;
+}
+/* Estilo del pie de página */
+footer {
+  background-color: #ffffff;
+  border-top: 1px solid #cccccc;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
