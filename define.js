@@ -16,7 +16,7 @@ this.projects = [
     },
      {
         name:"MeguminBot",
-        description: "Un bot para Discord usadando Cleverbot.",
+        description: "Un bot para Discord usando Cleverbot (Gracias Yulie por ver este error).",
         img: "megumin-pfp",
         git: "https://mrniz.github.io/blog/?d=megumin-bot"
     },
