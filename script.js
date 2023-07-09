@@ -24,8 +24,10 @@ function update() {
     themeText.src = `img/when-${!darkMode}.png`;
     themeIcon.src = darkMode ? 'img/light-theme.png' : 'img/dark-theme.png';
     for (let d of document.getElementsByTagName("*")) {
+      if (!d.classList.contains("ignore")){
       d.classList.remove("dark-mode", "white-mode");
       d.classList.add(darkMode ? "dark-mode" : "white-mode");
+    }
     }
     curMode = darkMode ? "a" : "b";
   }
@@ -38,9 +40,9 @@ for (let project of (this.projects)) {
     <b style="background-color: ${project.color};">
       <img src="img/proj/${project.img}.png">
       <a href="${project.git}">${project.name}</a>
-      <desc>- ${project.description}</desc>
+      <desc class="ignore">- ${project.description}</desc>
       <p></p>
-      <descl>${project.largeDesc}</descl>
+      <descl class="ignore">${project.largeDesc}</descl>
       <center style="background-color: ${project.color};">
         <p></p>
         ${project.refImg ? `<img class="refimg" src="${project.allowSs ? 'img/ss/' + project.refImg +'.png' : project.refImg }">` : ""}

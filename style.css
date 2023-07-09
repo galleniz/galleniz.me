@@ -1,3 +1,7 @@
+desc, descl {
+  background-color: #333333;
+  color: #ffffff;
+  }
 .white-mode {
 background-color: #ffffff;
 color: #333333;
@@ -22,10 +26,6 @@ transform: rotate(0.015deg);
 }
 desc {
 display: contents;
-}
-desc, descl {
-background-color: #333333;
-color: #ffffff;
 }
 .flagtrans {
 display: -webkit-box;
