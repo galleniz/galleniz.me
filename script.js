@@ -31,22 +31,21 @@ function update() {
   }
   setTimeout(update, 0.1);
 }
-
-for (let project of projects.children) {
+for (let project of (this.projects)) {
   let div = document.createElement("li");
   div.classList.add("img");
   div.innerHTML = `
-    <b style="background-color: ${project.dataset.color};">
-      <img src="img/proj/${project.dataset.img}.png">
-      <a href="${project.dataset.git}">${project.dataset.name}</a>
-      <desc>- ${project.dataset.description}</desc>
+    <b style="background-color: ${project.color};">
+      <img src="img/proj/${project.img}.png">
+      <a href="${project.git}">${project.name}</a>
+      <desc>- ${project.description}</desc>
       <p></p>
-      <descl>${project.dataset.largeDesc}</descl>
-      <center style="background-color: ${project.dataset.color};">
+      <descl>${project.largeDesc}</descl>
+      <center style="background-color: ${project.color};">
         <p></p>
-        ${project.dataset.refImg ? `<img class="refimg" src="${project.dataset.allowSs ? 'img/ss/' + project.dataset.refImg +'.png' : project.dataset.refImg }">` : ""}
+        ${project.refImg ? `<img class="refimg" src="${project.allowSs ? 'img/ss/' + project.refImg +'.png' : project.refImg }">` : ""}
         <p></p>
-        ${project.dataset.miniScript ? project.dataset.miniScript : ""}
+        ${project.miniScript ? project.miniScript : ""}
       </center>
     </b>
   `;
