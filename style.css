@@ -22,7 +22,7 @@ width: 50%;
 body {
 font-family: Arial, sans-serif;
 font-size: 100%;
-transform: rotate(0.015deg);
+transform: rotate(0.20deg);
 }
 desc {
 display: contents;
