@@ -88,7 +88,7 @@ logo.onclick = () => {
   }
 };
 
-fetch(`https://api.github.com/users/MrNiz`)
+fetch(`https://api.github.com/users/galleniz`)
   .then(response => response.json())
   .then(data => {
     const profilePicUrl = data.avatar_url;
