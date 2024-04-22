@@ -44,9 +44,12 @@ header ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: flex; /* Add this line */
+    flex-direction: row; /* Add this line */
+    justify-content: flex-end; /* Add this line */
 }
+
 header ul li {
-    float: right;
     margin: 0 10px;
 }
 header ul li a {
@@ -163,6 +166,16 @@ footer ul li a {
 
    
 @media (max-width: 767px) {
+    header ul li {
+        display: none;
+    }
+    header ul {
+        justify-content: center;
+    }
+    header h1 {
+        float: none;
+        text-align: center;
+    }
     #flags {
         margin-left: 60%;
     }
