@@ -1,113 +1,87 @@
 <!DOCTYPE html>
-<html lang="es" style="height: 100%;">
+<html >
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>¿Quién es Niz?</title>
-  <meta name="description" content="Soy Niz, eso creo.">
-  <link rel="icon" href="favicon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Portafolio de GalleNiz</title>
+    <link rel="icon" href="favicon.png">
+    <!-- Adding meta tags, for embeds in discord and general embeds-->
+    <meta property="og:title" content="Portafolio de GalleNiz">
+    <meta property="og:description" content="Portafolio de GalleNiz, un desarrollador de software y modelador 3D">
+    <meta property="og:image" content="favicon.png">
+    <meta property="og:url" content="https://galleniz.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Portafolio de GalleNiz">
+    <meta property="og:locale" content="es_ES">
+
+    
+        
+    <link rel="stylesheet" type="text/css" href="src/styles.css">
 </head>
 <body>
-  <header>
-    <button id="theme-button">
-      <img id="theme-text" style="display:none" class="themeicon" src="img/when-true.png" alt="Texto del tema">
-      <img id="theme-icon" class="" src="img/light-theme.png" alt="Alterna el tema">
-    </button>
-    <center>
-      <img class="funkin_papu_imagen_principal" src="favicon.png" alt="Imagen Principal">
-      <h1>MrNiz / Niz</h1>
-      <h2>ESTE TEXTO, aún no carga :v</h2>
-    </center>
-    <flag class="flagtrans" title="W"></flag>
-    <flag class="flagbi"></flag>
-  </header>
-  <main>
-    <section id="about">
-      <center>
-        <h2>Acerca de mí</h2>
-      </center>
-      <textFor class="about">
-        ¡Hola! Soy MrNiz, me gusta programar videojuegos o simplemente cosas raras que incluyan lenguajes que sé, porque me gusta mucho la navidad. Soy de México, y probablemente lo siga siendo así porque me encanta el país (spoiler: no).
-        <p>Sé tocar varios instrumentos musicales, uno de ellos es el Piano, Flauta, Guitarra acústica; Esto se debe a que entre los años 2020-2023 estuve practicando mucho para poder mejorar en algo que no sea estar en una pantalla 24/7.</p>
-        <p>En la actualidad de esta descripción (2023), estoy estudiando estudios comunes que dan en mi país de origen (México), así que por ahora no estoy estudiando algo relacionado a la programación, pero lo haré :D.</p>
-        <p>Me gustan mucho las festividades, porque así me dan días libres de clase jiajidsajifjaafja. Se me facilitan las Matemáticas, irónicamente, porque aprendí a dividir a los 13 años, así que es como algo raro que algo que se me hacía complicado, ahora sea un talento "bueno".</p>
-        <p>Si me preguntas cuáles son mis pasatiempos (nadie los pregunta akjdaslkf) son leer libros, escuchar música, y por supuesto programar, pero me estreso DEMASIADO al hacer esto último. ¿QUIÉN DIJO QUE LAS PERSONAS QUE TIENEN GATOS TIENEN MENOS ESTRÉS?</p>
-        <p>Tengo gatos, me encantan los gatos, los gatos son hermosos, adoro los gatos.</p>
-        <p>Y ya :v.</p>
-      </textFor>
-      <center>
-        <h3>Juegos que me gustan</h3>
-      </center>
-      <textFor class="about">
-        Ufa, hice esto una sección porque hay tanto por contar.
-        Me gusta cualquier tipo de juego, y no exagero, hay muchos juegos que he jugado (vaya) a lo largo de mi gran vida, pero concretamente me gustan los Zeldas, y actualmente me sigue gustando el Zelda Breath of the Wild y Zelda Ocarina of Time.
-        <p>Pero también me gustan los juegos rítmicos como Osu!, Rhythm Heaven, PaRappa the Rapper, y no FNF como cualquiera pensaría.</p>
-        <p>Puedo decir que me pasé 5 años de mi vida jugando Minecraft, ahora no lo juego tanto pero sí llevé MUCHO tiempo jugándolo.</p>
-        <p>Los juegos de móvil, no es lo mío, pero me encanta jugarlos, se me hacen fastidiosos, pero extrañamente adictivos, es un amor-odio con los juegos móviles, ya que he jugado varios de estos, y los tengo aún en mis celulares todos proasos.</p>
-      </textFor>
-    </section>
-    <section id="qa">
-      <center>
-        <h2>Preguntas</h2>
-      </center>
-      <h3 class="qa"><li class="qa">¿Por qué sos tan sexy?</li></h3>
-      <p>Que. <risas style="color: white">SO</risas></p>
-      <h3 class="qa"><li class="qa">¿Haces comisiones?</li></h3>
-      <p>No sé qué es eso, por si acaso, consulta mi Twitter, ahí aviso cosas de vez en cuando.</p>
-      <h3 class="qa"><li class="qa">¿Eres el Chavo?</li></h3>
-      <p>Sí.</p>
-      <h3 class="qa"><li class="qa">¿POR QUÉ LA PÁGINA ESTÁ INCLINADA?</li></h3>
-      <p>Es que se anda cayendo, perdón 😭😭😭</p>
-    </section>
-    <section id="portfolio">
-      <center>
-        <h2>Portafolio</h2>
-      </center>
-      <ul></ul>
-    </section>
-    <section id="contact">
-      <center>
-        <h2>Redes sociales asociadas</h2>
-      </center>
-      <ul>
-        <li class="img">
-          <b style="background-color: rgba(114, 137, 218, 0.9); color: white; text-decoration: none;">
-            <img src="img/discord.webp" alt="Discord Icon">
-            <a href="https://discord.com/users/482637805034668032">Discord - @mrniz / @mrnizekisde | Uso muy a menudo Discord y podrás contactar fácil conmigo.</a>
-          </b>
-        </li>
-        <li class="img">
-          <b style="background-color: rgba(80, 80, 80, 0.9); color: white; text-decoration: none;">
-            <img src="img/github.png" alt="GitHub Icon">
-            <a href="https://github.com/MrNiz">GitHub - MrNiz | ¿Quieres ver mis repositorios?</a>
-          </b>
-        </li>
-        <li class="img">
-          <b style="background-color: rgba(85, 128, 145, 0.9); color: white; text-decoration: none;">
-            <img src="img/twitter.png" alt="Twitter Icon">
-            <a href="https://twitter.com/mrnizekisde">Twitter - @mrnizekisde | Esta red la uso muy de vez en cuando.</a>
-          </b>
-        </li>
-        <li class="img">
-          <b style="background-color: rgba(196, 63, 63, 0.9); color: white; text-decoration: none;">
-            <img src="img/youtube.png" alt="YouTube Icon">
-            <a href="https://youtube.com/@MrNiz">YouTube - @MrNiz | Mi YouTube oficial.</a>
-          </b>
-        </li>
-        <li class="img">
-          <b style="background-color: rgba(136, 77, 77, 0.9); color: white; text-decoration: none;">
-            <img src="img/gmail.png" alt="Gmail Icon">
-            <a href="mailto:mrnizsoft@gmail.com">mrnizsoft@gmail.com | Cualquier tipo de negociación sobre cualquier tipo aquí por favor.</a>
-          </b>
-        </li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <p>© 2023 MrNiz. Todos los derechos reservados creo nose nsjjs..</p>
-  </footer>
-  <script src="define.js"></script>
-  <script src="script.js"></script>
+    <header>
+        <img src="favicon.png">
+       
+        <h1>Galleta Niz</h1>
+        <ul>
+           <!-- <li><a href="#">Inicio</a></li>-->
+            <li><a href="#aboutme">Sobre mí</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li> <a href="#contact">Contacto</a></li>
+        </ul>
+    </header>
+    
+    <main>
+        <div id="aboutme">
+
+        <h2 styles="">Sobre mí</h2>
+        <div id="flags"style="margin-left: 90%; margin-top: -40px">
+            <flagtrans ></flagtrans>
+            <flagbi ></flagbi>
+        </div>
+        <p style="margin-left: 30px;">Soy Niz, una persona independiente de desarrollo de software, con más <b>3 años</b> de experiencia en programación, y empezando en el diseño, arte y modelaje 3D :p</p>
+        <p style="margin-left: 30px;">Me gusta mucho el desarrollo de videojuegos, y la programación en general, y me encanta aprender cosas nuevas, y compartir lo que sé con los demás.</p>
+        <p style="margin-left: 30px">Disculpen si reulto ser una persona que moleste demasiado, trato de no serlo, y, creo que no lo logro la mayoria del tiempo pero... Lo intento!</p>
+    </div>
+        <div id="projects">
+
+        <h2>Proyectos</h2>
+        <ul class="project-list">
+            <li class="project">
+                <img src="img/mania.png">
+                <h3>MusicMania</h3>
+                <p class="tilin"><b>(Proyecto Personal)</b></p>
+                <p>Music Mania es un juego de ritmo en el motor HaxeFlixel <source-code></source-code></p>
+                <!--- href to  "https://github.com/galleniz/musicmania"-->
+                <button class="button" onclick="window.location.href='https://github.com/galleniz/musicmania';">Ver en GitHub</button>
+            </li>
+            <li class="project">
+                <img src="favicon.png">
+                <h3>Booly Bot</h3>
+                <p class="tilin"><b>(Proyecto de Trabajo)</b></p>
+                <p>Un trabajo en conjunto a <a href="https://mdcdev.me/">@MDC_DEV</a> de un bot hacia el YouTuber Booly</p>
+                <button class="button">Ver en GitHub</button>
+            </li>
+            <!--- Base: --->
+           <!--- <li class="project">
+                <img src="favicon.png">
+                <h3>Proyecto 1</h3>
+                <p>Descripción del proyecto 1</p>
+                <button class="button">Ver Mas</button>
+            </li>--->
+           
+        </ul>
+    </div>
+    </main>
+    
+    <footer>
+        <div id="contact">
+        <ul>
+            <li><a href="https://twitter.com/galletaniz"><img src="img/plats/twitter.png"></a></li>
+            <li><a href="https://github.com/galleniz"><img src="img/plats/github.png"></a></li>
+            <li><a href="https://discord.com/users/482637805034668032"><img src="img/plats/discord.png"></a></li>
+        </ul>
+    </div>
+    </footer>
 </body>
 </html>

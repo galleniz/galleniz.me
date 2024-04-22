@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.flagtrans ,flagtrans{
+    display: -webkit-box;
+    width: 40px;
+    height: 25px;
+    background: linear-gradient(0deg, #55CDFC 16.67%, #F7A8B8 16.67% 33.33%, #FFFFFF 33.33% 66.67%, #F7A8B8 66.67% 83.33%, #55CDFC 83.33%);
+    }
+    .flagbi , flagbi{
+    display: -webkit-box;
+    width: 40px;
+    height: 25px;
+    margin-left: 50px;
+    margin-top: -25px;
+    background: linear-gradient(0deg, #0038A8 0%, #0038A8 33.33%,  #9B4F96 33.33%, #9B4F96 66.67%,#D60270 66.67%, #D60270 100%);
+    }
+header {
+    background: linear-gradient(to right, rgb(255, 61, 61), red);
+    color: #fff;
+    padding: 20px;
+}
+header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 15%;
+    margin: 0 auto;
+    display: block;
+}
+header imgdot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: block;
+    float: right;
+    background-color: rgb(0, 162, 255);
+}
+/* List of items to right */
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+header ul li {
+    float: right;
+    margin: 0 10px;
+}
+header ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+header ul li a:hover {
+    background-color: rgb(255, 61, 61);
+    border-radius: 5px;
+}
+/* Alinear h1, con la lista */
+header h1 {
+    float: left;
+}
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+main ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+main ul li {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgb(223, 223, 223);
+}
+main ul li:hover {
+    background-color: rgb(196, 196, 196);
+}
+main .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .project-list .project {
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+    
+    border-radius: 5px ;
+    text-align: center;
+}
+
+main .project-list .project img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+main .project-list .project h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+main .project-list .project p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+main .project-list .projec .tilin {
+    font-size: 10px;
+
+}
+main .project-list .project .button {
+    background-color: #202020;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    transform: none; /* Remove 3D effect */
+}
+main .project-list .project .button:hover {
+    background-color: #404040;
+}
+
+footer {
+    background-color: #ff6767;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0 ;
+    padding: 0;
+}
+footer ul li img {
+    height: 20px;
+    display: block;
+    float: right;
+    /* Center (in vertical form)*/
+    margin: 0 auto;
+    margin-top: -10px;
+}
+footer ul li {
+    display: inline;
+    margin: 0  10px auto ;
+    float: right;
+}
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+   
