@@ -162,3 +162,14 @@ footer ul li a {
 }
 
    
+@media (max-width: 767px) {
+    #flags {
+        margin-left: 60%;
+    }
+}
+
+@media (min-width: 768px) {
+    #flags {
+        margin-left: 90%;
+    }
+}
