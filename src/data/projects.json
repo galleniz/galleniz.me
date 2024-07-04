@@ -1,0 +1,59 @@
+[
+    {
+      "imgSrc": "img/mania.png",
+      "title": "MusicMania",
+      "status": "en desarrollo",
+      "description": "Music Mania es un juego de ritmo en el motor [HaxeFlixel]( https://haxeflixel.com/ ) que se basa en el juego de ritmo de Nintendo DS, Rhythm Heaven (Rhythm Paradise en Europa).",
+      "projectType": "Proyecto Personal",
+      "githubLink": "https://github.com/galleniz/musicmania"
+    },
+    {
+      "imgSrc": "img/bots_any_bot.png",
+      "title": "Any Bot",
+      "status": "en desarrollo",
+      "description": "Un bot en conjunto a [@MDC_DEV]( https://mdcdev.me ) de un bot desarrollado para ser fácil de usar para todos.",
+      "projectType": "Colaboración",
+      "githubLink": "https://github.com/AnyDevCode/Any-Bot"
+    },
+    {
+      "imgSrc": "https://raw.githubusercontent.com/galleniz/my-first-app-nx/stable/icon.jpg",
+      "title": "My First App NX",
+      "status": "",
+      "description": "Un proyecto probando la librería [LibNX]( https://github.com/switchbrew/libnx ) para Nintendo Switch",
+      "projectType": "Proyecto Personal",
+      "githubLink": "https://github.com/galleniz/my-first-app-nx"
+    },
+    {
+      "imgSrc": "https://dunb17ur4ymx4.cloudfront.net/webstore/logos/be4b7bec63d379f0c5ac528075487b7d4bffcb54.png",
+      "title": "Booly Bot",
+      "status": "",
+      "description": "Un trabajo en conjunto a [@MDC_DEV]( https://mdcdev.me ) de un bot hacia el YouTuber Booly",
+      "projectType": "Proyecto de Trabajo",
+      "githubLink": "https://github.com/MDCYT/Discord-Embed-Bot-1"
+    },
+    {
+        "imgSrc": "img/wabot-reles.png",
+        "title": "WaBot",
+        "status": "en mantenimiento",
+        "description": "Un bot de WhatsApp *descontinuado*, que se hizo más como un template.",
+        "projectType": "Proyecto Personal",
+        "githubLink": "https://github.com/galleniz/WaBot"
+
+    },
+    {
+        "imgSrc": "img/vaporeon-pfp.png",
+        "title": "VaporeBot",
+        "status": "",
+        "description": "Un bot de Discord que se hizo en speedrun y por los chistes (Sabías que en terminos).",
+        "projectType": "Proyecto Personal",
+        "githubLink": "https://github.com/galleniz/VaporeBot"
+    },
+    {
+        "imgSrc": "img/megumin-pfp.png",
+        "title": "MeguminBot",
+        "status": "",
+        "description": "Un bot IA de Discord para hacer preguntas y respuestas, que anda en mantenimiento JSALDK",
+        "projectType": "Proyecto Personal",
+        "githubLink": "https://github/galleniz/MeguminBot"
+    }
+]

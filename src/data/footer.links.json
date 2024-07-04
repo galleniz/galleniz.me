@@ -1,0 +1,23 @@
+[
+    {
+        "href": "https://twitter.com/galletaniz",
+        "imgSrc": "img/plats/twitter.png",
+        "id": "twitter"
+    },
+    {
+        "href": "https://github.com/galleniz",
+        "imgSrc": "img/plats/github.png",
+        "id": "github"
+    },
+    {
+        "href": "https://discord.com/users/482637805034668032",
+        "imgSrc": "img/plats/discord.png",
+        "id": "discord"
+    },
+    {
+        "href": "https://ko-fi.com/galleniz",
+        "imgSrc": "img/plats/kofi-2.webp",
+        "id": "kofi"
+    }
+]
+   

@@ -1,27 +1,119 @@
+* {
+    font-size: 105%;
+}
+*:not(header):not(header *) {
+
+
+    animation: appear 1.25s ease-in-out;
+}
+/* animation of appear from bottom and opacity of all elements (except of header */
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(-200px) ;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0)  ;
+    }
+}
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Ubuntu", Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-.flagtrans ,flagtrans{
+#bg {
+    padding: 20px;
+    margin: 0;
+    height: 100%;
+    display: block;
+    border-radius: 15px 20px 40px 10px;
+    /* shadow */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+#textBg {
+    background-color: rgb(53, 81, 207); 
+    color: white; 
+    padding: 20px;
+    margin: 0;
+    height: 100%;
+    display: block;
+    border-radius: 15px 20px 40px 10px;
+    justify-content: center;
+    align-items: center;
+    /* shadow */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+#papuImg {
+    display: block;
+    width: 155px;
+    height: 155px;
+    border-radius: 25% 35% ;
+    align-content: center;
+    background-color:rgba(39, 39, 39, 0.25);
+    /* shadow */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+.papu {
+    align-items: center;
+
+    width: 150px;
+    border-radius: 50%;
+}
+
+#front .indev {
+    background-color: #ff3333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.flagtrans,
+flagtrans {
     display: -webkit-box;
     width: 40px;
     height: 25px;
-    background: linear-gradient(0deg, #55CDFC 16.67%, #F7A8B8 16.67% 33.33%, #FFFFFF 33.33% 66.67%, #F7A8B8 66.67% 83.33%, #55CDFC 83.33%);
-    }
-    .flagbi , flagbi{
+    background: linear-gradient(
+        0deg,
+        #55cdfc 16.67%,
+        #f7a8b8 16.67% 33.33%,
+        #ffffff 33.33% 66.67%,
+        #f7a8b8 66.67% 83.33%,
+        #55cdfc 83.33%
+    );
+}
+
+.flagbi,
+flagbi {
     display: -webkit-box;
     width: 40px;
     height: 25px;
     margin-left: 50px;
     margin-top: -25px;
-    background: linear-gradient(0deg, #0038A8 0%, #0038A8 33.33%,  #9B4F96 33.33%, #9B4F96 66.67%,#D60270 66.67%, #D60270 100%);
-    }
+    background: linear-gradient(
+        0deg,
+        #0038a8 0%,
+        #0038a8 33.33%,
+        #9b4f96 33.33%,
+        #9b4f96 66.67%,
+        #d60270 66.67%,
+        #d60270 100%
+    );
+}
+
 header {
     background: linear-gradient(to right, rgb(255, 61, 61), red);
     color: #fff;
     padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+#aboutme p {
+    margin-left: 30px;
+}
+
 header img {
     width: 120px;
     height: 120px;
@@ -29,44 +121,52 @@ header img {
     margin: 0 auto;
     display: block;
 }
+
 header imgdot {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     display: block;
     float: right;
-    
     background-color: rgb(0, 162, 255);
 }
+
 /* List of items to right */
 header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    display: flex; /* Add this line */
-    flex-direction: row; /* Add this line */
-    justify-content: flex-end; /* Add this line */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 header ul li {
     margin: 0 10px;
+    /* add fade */
 }
+
 header ul li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: background-color 0.3s;
+
 }
+
 header ul li a:hover {
     background-color: rgb(255, 61, 61);
     border-radius: 5px;
 }
+
 /* Alinear h1, con la lista */
 header h1 {
     float: left;
 }
+
 h1 {
     margin: 0;
 }
@@ -74,22 +174,28 @@ h1 {
 main {
     padding: 20px;
 }
+
 main ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
 main ul li {
     padding: 10px;
     margin: 10px 0;
     background-color: rgb(223, 223, 223);
 }
+
 main ul li:hover {
     background-color: rgb(196, 196, 196);
 }
+
 main .project-list {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    
     justify-content: center;
 }
 
@@ -97,9 +203,16 @@ main .project-list .project {
     width: 275px;
     margin: 10px;
     padding: 10px;
-    
-    border-radius: 5px ;
+    border-radius: 5px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: background-color 0.3s;
+
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 main .project-list .project img {
@@ -115,12 +228,17 @@ main .project-list .project h2 {
 
 main .project-list .project p {
     font-size: 14px;
-    margin-bottom: 10px;
 }
-main .project-list .projec .tilin {
-    font-size: 10px;
 
+.tilin {
+    background-color:rgb(53, 81, 207);
+    color: #fff;
+    width: 75%;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 12px;
 }
+
 main .project-list .project .button {
     background-color: #202020;
     color: #fff;
@@ -129,8 +247,10 @@ main .project-list .project .button {
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
-    transform: none; /* Remove 3D effect */
+    transform: none;
+    transition: background-color 0.3s;
 }
+
 main .project-list .project .button:hover {
     background-color: #404040;
 }
@@ -141,30 +261,45 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
 footer ul {
     list-style-type: none;
-    margin: 0 ;
+    margin: 0;
     padding: 0;
 }
+
 footer ul li img {
     height: 20px;
     display: block;
     float: right;
-    /* Center (in vertical form)*/
     margin: 0 auto;
     margin-top: -10px;
+    /* animation from change height */
+    transition: height 0.3s;
 }
+
 footer ul li {
     display: inline;
-    margin: 0  10px auto ;
+    margin: 0 10px auto;
     float: right;
 }
+
 footer ul li a {
     color: #fff;
     text-decoration: none;
 }
+arrow {
+    font-size: 64px;
+    /* bold item */
+    font-weight: bold;
+    position: absolute;
+    right: 5%;
+    margin-top: -80px;
+    animation: bounce 2s infinite;
 
-   
+
+}
+
 @media (max-width: 767px) {
     header ul li {
         display: none;
@@ -177,11 +312,28 @@ footer ul li a {
         text-align: center;
     }
     #flags {
-        margin-left: 60%;
+        margin-left: 75%;
+    }
+    #textBg {
+        width: 100%;
+    }
+    main .project-list .project {
+        width: 200px;
+    }
+    main .project-list .project img {
+        height: 200px;
+    }
+   
+}
+@media (max-width: 375px) {
+    main .project-list .project {
+        width: 100%;
     }
 }
-
 @media (min-width: 768px) {
+    #textBg {
+        width: 75%;
+    }
     #flags {
         margin-left: 90%;
     }

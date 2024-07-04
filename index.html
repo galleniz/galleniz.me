@@ -1,102 +1,90 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Portafolio de GalleNiz</title>
-    <link rel="icon" href="favicon.png">
-    <!-- Adding meta tags, for embeds in discord and general embeds-->
+    <meta property="og:thumbnail" content="https://niz.mdcdev.me/favicon.png">
     <meta property="og:title" content="Portafolio de GalleNiz">
     <meta property="og:description" content='Desarrolladora de software, "artista", y tonta :3'>
-    <meta property="og:image" content="https://galleniz.github.io/galleniz/favicon.png">
-    <meta property="og:url" content="https://galleniz.github.io/">
+    <meta property="og:image" content="https://niz.mdcdev.me/favicon.png">
+    <meta property="og:url" content="https://niz.mdcdev.me/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Portafolio de GalleNiz">
     <meta property="og:locale" content="es_ES">
-    <!---thumbnail-->
-    <meta property="og:thumbnail" content="https://galleniz.github.io/galleniz/favicon.png">
     <meta name="theme-color" content="#ff9090">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@galletaniz">
     <meta name="twitter:creator" content="@galletaniz">
     <meta name="twitter:title" content="Portafolio de GalleNiz">
     <meta name="twitter:description" content='Desarrolladora de software, "artista", y tonta :3'>
     <meta name="twitter:image" content="favicon.png">
-    <meta name="twitter:url" content="https://galleniz.github.io/">
-    
-
+    <meta name="twitter:url" content="https://niz.mdcdev.me/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-        
     <link rel="stylesheet" type="text/css" href="src/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="favicon.png">
-        <p></p>
-
-        <h1>Galleta Niz</h1>
-        <ul >
-            
-           <!-- <li><a href="#">Inicio</a></li>-->
+    <header id="header">
+        <h1 style="font: 'Oswald';">NIZ :3</h1>
+        <ul>
             <li><a href="#aboutme">Sobre mí</a></li>
             <li><a href="#projects">Proyectos</a></li>
-            <li> <a href="#contact">Contacto</a></li>
+            <li><a href="#contact" onclick="clickContact()">Contacto</a></li>
         </ul>
     </header>
-    
     <main>
+            <center style="font-size:120%;">
+                <div id="papuImg">
+                        <img class="papu" src="favicon.png">
+                </div>
+                <br>
+                <div id="textBg" >
+                    <p >Howdy~ ;3, soy <b>Niz</b>, ó, como me conocen en la red, <b>GalleNiz</b>, desarrollo proyectos, dibujar y aprendo rápido, odio la prepa :,D<br></p>
+                </div>
+                <br>
+                    <p style="font-size:76%; opacity: 50%;">no le ando copiando el diseño a MDC</p>
+
+
+                
+            </center>
         <div id="aboutme">
-
-        <h2 styles="">Sobre mí</h2>
-        <div id="flags" style=" margin-top: -40px">
-            <flagtrans></flagtrans>
-            <flagbi></flagbi>
+            <div id="bg" style="background-color: rgb(226, 43, 43); color: white; width: 200px">
+                <h2>Sobre mí</h2>
+            </div>
+            <div id="flags" style="margin-top: -40px">
+                <flagtrans></flagtrans>
+                <flagbi></flagbi>
+            </div>
+            <br>
+            <p>Soy Niz, una persona independiente de desarrollo de software, con más <b>3 años</b> de experiencia en programación, y empezando en el diseño, arte y modelaje 3D :p</p>
+            <p>Me gusta mucho el desarrollo de videojuegos, y la programación en general, y me encanta aprender cosas nuevas, y compartir lo que sé con los demás.</p>
+            <p>Disculpen si reulto ser una persona que moleste demasiado, trato de no serlo, y, creo que no lo logro la mayoria del tiempo pero... Lo intento!</p>
+            <p>Actualmente salgo con <a href="https://twitter.com/@emilyrealuwu">Emily</a>, osea que pertenezco sexual y fisicamente a ella.</p>
+            <p>Soy perteneciente al negocio <a href="https://anydevcode.com">Any Dev Code</a> siendo programadora que programa :v</p>
         </div>
-        <p style="margin-left: 30px;">Soy Niz, una persona independiente de desarrollo de software, con más <b>3 años</b> de experiencia en programación, y empezando en el diseño, arte y modelaje 3D :p</p>
-        <p style="margin-left: 30px;">Me gusta mucho el desarrollo de videojuegos, y la programación en general, y me encanta aprender cosas nuevas, y compartir lo que sé con los demás.</p>
-        <p style="margin-left: 30px">Disculpen si reulto ser una persona que moleste demasiado, trato de no serlo, y, creo que no lo logro la mayoria del tiempo pero... Lo intento!</p>
-    </div>
         <div id="projects">
-
-        <h2>Proyectos</h2>
-        <ul class="project-list">
-            <li class="project">
-                <img src="img/mania.png">
-                <h3>MusicMania</h3>
-                <p class="tilin"><b>(Proyecto Personal)</b></p>
-                <p>Music Mania es un juego de ritmo en el motor HaxeFlixel <source-code></source-code></p>
-                <!--- href to  "https://github.com/galleniz/musicmania"-->
-                <button class="button" onclick="window.location.href='https://github.com/galleniz/musicmania';">Ver en GitHub</button>
-            </li>
-            <li class="project">
-                <img src="https://dunb17ur4ymx4.cloudfront.net/webstore/logos/be4b7bec63d379f0c5ac528075487b7d4bffcb54.png">
-                <h3>Booly Bot</h3>
-                <p class="tilin"><b>(Proyecto de Trabajo)</b></p>
-                <p>Un trabajo en conjunto a <a href="https://mdcdev.me/">@MDC_DEV</a> de un bot hacia el YouTuber Booly</p>
-                <button class="button" onclick="window.location.href=`https://github.com/MDCYT/Discord-Embed-Bot-1`">Ver en GitHub</button>
-            </li>
-            <!--- Base: --->
-           <!--- <li class="project">
-                <img src="favicon.png">
-                <h3>Proyecto 1</h3>
-                <p>Descripción del proyecto 1</p>
-                <button class="button">Ver Mas</button>
-            </li>--->
-           
-        </ul>
-    </div>
+            <div id="bg" style="background-color: rgb(226, 43, 43); color: white; width: 200px;">
+                <h2>Proyectos</h2>
+            </div>
+            <ul class="project-list">
+             
+            </ul>
+        </div>
     </main>
-    
+    <arrow id="arrow">↓</arrow>
     <footer>
         <div id="contact">
-        <ul>
-            <li><a href="https://twitter.com/galletaniz"><img src="img/plats/twitter.png"></a></li>
-            <li><a href="https://github.com/galleniz"><img src="img/plats/github.png"></a></li>
-            <li><a href="https://discord.com/users/482637805034668032"><img src="img/plats/discord.png"></a></li>
-        </ul>
-    </div>
+            <ul>
+              
+            </ul>
+        </div>
     </footer>
+    <script src="src/home/ContactFooterManager.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="src/home/script.js"></script>
+    <script src="src/home/AppearProjects.js"></script>
 </body>
 </html>
