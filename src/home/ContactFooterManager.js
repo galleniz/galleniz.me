@@ -6,7 +6,7 @@ fetch('src/data/footer.links.json')
     .then(links => {
         links.forEach(link => {
             const li = document.createElement('li');
-            li.innerHTML = `<a href="${link.href}"><img id="${link.id}" src="${link.imgSrc}"></a>`;
+            li.innerHTML = `<a href="${link.href}" ><img id="${link.id}" src="${link.imgSrc}" class="hoverZoom"></a>`;
             ul.appendChild(li);
             ids.push(link.id);
         });
@@ -18,7 +18,8 @@ arrow.style.opacity = 0;
 
 function clickContact() {
     console.log("When");
-
+    // go to all down
+    window.scrollTo(0, document.body.scrollHeight);
     arrow.style.opacity = 1;
     arrow.animate(
         [
@@ -38,9 +39,9 @@ function clickContact() {
 function bump() {
     for (let k of ids) {
         let element = document.getElementById(k);
-        element.style.height = "30px";
+        element.style.transform = "scale(1.5)";
         setTimeout(() => {
-            element.style.height = "20px";
+            element.style.transform = "";
         }, 2000);
     }
 
