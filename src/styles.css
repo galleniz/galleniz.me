@@ -1,15 +1,79 @@
-* {
-    font-size: 105%;
+body[data-theme="dark"]  {
+    --presentation-colour: rgb(33, 52, 141);
+    --cur-theme-color: #121212;
+    --cur-text-color: #e0e0e0;
+    --color--acento: #bb86fc;
+    --bg--colour-0: rgb(138, 31, 31);
+    --bg--colour-1: rgb(184, 15, 15);
+    --section-col: rgb(167, 36, 36);
+    --section-l-col: rgb(255, 255, 255);
+    --project-col: rgb(167, 36, 36);
+    --project-col-hover: rgb(167, 36, 36);
+    --project-col:  rgb(138, 144, 179);
+    --project-col-text: white;
+    --project-col-hover: rgb(196, 128, 128);
+    --ul-selection:  rgb(175, 42, 42);
 }
-
-*:not(header):not(header *) {
-    animation: appear 1.25s ease-in-out;
+:root   {
+    --presentation-colour: rgb(53, 81, 207);
+    --cur-theme-color: #f5f5f5;
+    --cur-text-color: #121212;
+    
+    --color--acento: #6200ee;
+    --bg--colour-0: rgb(255, 61, 61) ;
+    --bg--colour-1: red;
+    --section-col: rgb(226, 43, 43);
+    --section-l-col: white;
+    --project-col:  rgb(174, 187, 255);
+    --project-col-text: black;
+    --project-col-hover: rgb(255, 178, 178);
+    --ul-selection:  rgb(255, 61, 61);
+    
 }
+.animation-down-end {
+    animation: disappear 0.8s ease-in-out;
 
-@keyframes appear {
+}
+.animation-left {
+    animation: appearButLeft 0.8s ease-in-out;
+}
+.animation-down {
+    animation: appear 0.8s ease-in-out;
+}
+.animation-right {
+    animation: appearButRight 0.8s ease-in-out;
+}
+.animation-up {
+    animation: appearButArriba 0.8s ease-in-out;
+
+}
+/* Animaciones */
+@keyframes appearButRight {
     from {
         opacity: 0;
-        transform: translateY(-200px);
+        transform: translateX(120px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes appearButLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-120px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes appearButArriba {
+    from {
+        opacity: 0;
+        transform: translateY(-120px);
     }
     to {
         opacity: 1;
@@ -17,19 +81,48 @@
     }
 }
 
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(120px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes disappear {
+    to {
+        opacity: 0;
+        transform: translateY(120px);
+    }
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos generales */
+* {
+    font-size: 105%;
+}
+
 body {
     font-family: "Ubuntu", Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color:var(--cur-text-color);
+    background: var(    --cur-theme-color);
 }
 
-#bg, #textBg, #papuImg {
+/* Estilos de elementos específicos */
+#bg, #textBg, #papuImg, #bg_p {
     padding: 20px;
     margin: 0;
     height: 100%;
     display: block;
     border-radius: 15px 20px 40px 10px;
-    /* shadow */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -38,7 +131,7 @@ body {
 }
 
 #textBg {
-    background-color: rgb(53, 81, 207);
+    background-color: var(--presentation-colour);
     color: white;
     justify-content: center;
     align-items: center;
@@ -59,7 +152,6 @@ body {
     height: 120%;
     margin-top: -10px;
     border-radius: 50%;
-
 }
 
 #front .indev {
@@ -72,29 +164,27 @@ body {
 
 .flagtrans, flagtrans {
     display: -webkit-box;
-    width: 40px;
-    height: 25px;
+    width: 75px;
+    height: 37.5px;
     background: linear-gradient(0deg, #55cdfc 16.67%, #f7a8b8 16.67% 33.33%, #ffffff 33.33% 66.67%, #f7a8b8 66.67% 83.33%, #55cdfc 83.33%);
 }
 
 .flagbi, flagbi {
     display: -webkit-box;
-    width: 40px;
-    height: 25px;
-    margin-left: 50px;
-    margin-top: -25px;
+    width: 75px;
+    height: 37.5px;
+    margin-left: 100px;
+    margin-top: -37.5px;
     background: linear-gradient(0deg, #0038a8 0%, #0038a8 33.33%, #9b4f96 33.33%, #9b4f96 66.67%, #d60270 66.67%, #d60270 100%);
 }
 
 header {
-    background: linear-gradient(to right, rgb(255, 61, 61), red);
+    background: linear-gradient(to right, 
+    var(--bg--colour-0), var(--bg--colour-1));
     color: #fff;
     padding: 20px;
+    height: 100px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-#aboutme p {
-    margin-left: 30px;
 }
 
 header img {
@@ -118,7 +208,6 @@ header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -134,20 +223,16 @@ header ul li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
 }
 
 header ul li a:hover {
-    background-color: rgb(255, 61, 61);
+    background-color: var(--ul-selection);
     border-radius: 5px;
 }
 
 header h1 {
     float: left;
-}
-
-h1 {
-    margin: 0;
 }
 
 main {
@@ -163,11 +248,12 @@ main ul {
 main ul li {
     padding: 10px;
     margin: 10px 0;
-    background-color: rgb(223, 223, 223);
+    background-color: var(--project-col);
+    color: var(--project-col-text)
 }
 
 main ul li:hover {
-    background-color: rgb(196, 196, 196);
+    background-color: var(--project-col-hover);
 }
 
 main .project-list {
@@ -186,15 +272,32 @@ main .project-list .project {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
     height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 main .project-list .project img {
-    height: 250px;
-    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
     margin-bottom: 10px;
+    transition: all 0.5s;
+}
+
+main .project-list .project img:hover {
+    object-fit: cover;
+    overflow: hidden;
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+main .project-list .project:hover {
+    transform: scale(1.05);
+    z-index: 1000;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
 }
 
 main .project-list .project h2 {
@@ -206,15 +309,6 @@ main .project-list .project p {
     font-size: 14px;
 }
 
-.tilin {
-    background-color: rgb(53, 81, 207);
-    color: #fff;
-    width: 75%;
-    padding: 10px;
-    border-radius: 50px;
-    font-size: 12px;
-}
-
 main .project-list .project .button {
     background-color: #202020;
     color: #fff;
@@ -224,7 +318,7 @@ main .project-list .project .button {
     display: inline-block;
     font-size: 14px;
     transform: none;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
 }
 
 main .project-list .project .button:hover {
@@ -232,7 +326,7 @@ main .project-list .project .button:hover {
 }
 
 footer {
-    background: linear-gradient(to right,  red,rgb(255, 61, 61));
+    background: linear-gradient(to right, var(--bg--colour-1), var(--bg--colour-0));
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -250,7 +344,7 @@ footer ul li img {
     float: right;
     margin: 0 auto;
     margin-top: -10px;
-    transition: height 0.3s;
+    transition: all 0.3s;
 }
 
 footer ul li {
@@ -264,7 +358,7 @@ footer ul li a {
     text-decoration: none;
 }
 
-arrow {
+.arrow {
     font-size: 64px;
     font-weight: bold;
     position: absolute;
@@ -273,7 +367,34 @@ arrow {
     animation: bounce 2s infinite;
 }
 
+#nav-toggle {
+    float: right;
+    display: inline;
+    margin: 0 10px auto;
+    height: 30px;
+    width: 30px;
+    color: white;
+    background: none;
+    border-color: white;
+    display: none;
+    position: relative;
+    z-index: 1000;
+}
+
 @media (max-width: 767px) {
+    #textBg {
+        width: 90%;
+        margin-left: -20px;
+    }
+    main .project-list .project {
+        width: 200px;
+    }
+    #flags {
+        margin-left: 75%;
+    }
+}
+
+@media (max-width: 375px) {
     header ul li {
         display: none;
     }
@@ -284,24 +405,18 @@ arrow {
         float: none;
         text-align: center;
     }
-    #flags {
-        margin-left: 75%;
-    }
-    #textBg {
-        width: 90%;
-        margin-left: -20px;
-    }
-    main .project-list .project {
-        width: 200px;
-    }
-    main .project-list .project img {
-        height: 200px;
+    #nav-toggle {
+        display: none !important;
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
     main .project-list .project {
         width: 100%;
+    }
+    main .project-list .project img {
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -310,6 +425,98 @@ arrow {
         width: 75%;
     }
     #flags {
-        margin-left: 90%;
+        margin-left: 80%;
     }
+}
+
+/* Estilos condicionales basados en media queries */
+@media (max-width: 666px) {
+    #flags {
+        margin-left: 70%;
+    }
+}
+
+@media (max-width: 575px) {
+    #flags {
+        margin-left: 60%;
+    }
+}
+
+@media (max-width: 450px) {
+    #flags {
+        display: none;
+    }
+    #nav-weas {
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 410px) {
+    #nav-weas {
+        font-size: 75%;
+        margin-left: -5%;
+    }
+}
+
+@media (max-width: 400px) {
+    #bg_p {
+        width: 100%;
+    }
+}
+
+#nav-weas {
+    align-content: center;
+    align-items: center;
+}
+
+/* Estilos de error */
+.error-text {
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    width: 60%;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    animation: appear-but-error 0.85s ease-in-out;
+}
+
+@keyframes appear-but-error {
+    from {
+        opacity: 0;
+        transform: translateY(120px) translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) translateX(-50%);
+    }
+}
+
+/* Estilos de navegación */
+#header {
+    transition: all 0.5s ease-in-out;
+}
+
+#nav-toggle {
+    display: block;
+}
+
+#loading  img [data-theme="dark"]{
+    filter: invert(100%);
+}
+.papu:hover {
+    cursor:grab;
+
+    transform: scale(1.1);
+    transition: all 0.3s;
+
+}
+.hoverZoom:hover {
+    filter: invert(10%);
+    transform: scale(1.5);
+    transition: all 0.3s;
 }
