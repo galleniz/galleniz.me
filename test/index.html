@@ -40,6 +40,20 @@
             overflow: hidden;
         }
         
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('./header.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.2;
+            z-index: 0;
+        }
+        
         header h1 {
             position: relative;
             z-index: 1;
@@ -97,6 +111,68 @@
             font-style: italic;
             text-align: center;
         }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        .custom-list {
+            list-style: none;
+        }
+        
+        .custom-list li {
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .custom-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--color-accent);
+            font-weight: bold;
+        }
+        
+        .references {
+            background-color: #f8f8f8;
+        }
+        
+        .references ul {
+            list-style: none;
+        }
+        
+        .references li {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+        
+        .maya-divider {
+            height: 30px;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,10 L100,10 M30,5 L30,15 M50,0 L50,20 M70,5 L70,15' stroke='%238C3503' stroke-width='2'/%3E%3C/svg%3E");
+            background-repeat: repeat-x;
+            margin: 30px 0;
+            opacity: 0.5;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            section {
+                padding: 15px;
+            }
+            
+            .image-box {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -105,45 +181,123 @@
     </header>
     
     <section>
+        <h2>Introducción</h2>
+        <p>La civilización maya fue una de las más avanzadas de Mesoamérica, destacándose por sus logros en matemáticas, astronomía, arquitectura y escritura. Se desarrolló principalmente en la península de Yucatán, Guatemala, Belice y partes de Honduras y El Salvador. Su historia se divide en tres grandes periodos: Preclásico, Clásico y Posclásico.</p>
+        <p>La sociedad maya dejó un legado impresionante en términos de conocimiento y cultura, aspectos que siguen siendo estudiados en la actualidad. Su influencia perdura en los pueblos indígenas modernos y en el interés arqueológico que sus estructuras despiertan a nivel mundial.</p>
+    </section>
+    
+    <div class="maya-divider"></div>
+    
+    <section>
         <h2>Orígenes y Desarrollo</h2>
+        <p>Los mayas se asentaron en la región alrededor del 2000 a.C., iniciando su desarrollo con aldeas agrícolas y una organización social basada en la producción de maíz, frijoles y calabazas. Durante el periodo Preclásico (2000 a.C. - 250 d.C.), establecieron los primeros centros urbanos y comenzaron a desarrollar una estructura jerárquica. En este periodo también se evidencian los primeros templos ceremoniales y sistemas de escritura rudimentarios.</p>
+        
+        <p>El periodo Clásico (250 - 900 d.C.) marcó el apogeo de la civilización maya, con la consolidación de ciudades como Tikal, Palenque, Copán y Calakmul. Durante este tiempo, los mayas desarrollaron sofisticadas formas de arte, expandieron su conocimiento astronómico y mejoraron sus sistemas de gobierno. La rivalidad entre ciudades-estado llevó a guerras constantes, lo que eventualmente debilitó a la civilización.</p>
+        
+        <p>En el Posclásico (900 - 1500 d.C.), muchas ciudades del Clásico fueron abandonadas, posiblemente debido a factores como sequías prolongadas, guerras y agotamiento de recursos. Sin embargo, nuevas urbes como Chichén Itzá, Uxmal y Mayapán se consolidaron como centros de poder en la península de Yucatán. El contacto con otras civilizaciones, como los toltecas, influyó en la cultura maya de este periodo.</p>
+        
         <div class="image-container">
             <div class="image-box">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Tikal_Temple1_2006.jpg/800px-Tikal_Temple1_2006.jpg" alt="Ruinas de Tikal">
+                <img src="/placeholder.svg?height=200&width=300" alt="Ruinas de Tikal">
                 <p>Ruinas de Tikal, Guatemala</p>
             </div>
             <div class="image-box">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Chichen_Itza_3.jpg/800px-Chichen_Itza_3.jpg" alt="Templo de Kukulkán">
+                <img src="/placeholder.svg?height=200&width=300" alt="Templo de Kukulkán">
                 <p>Templo de Kukulkán, Chichén Itzá</p>
             </div>
         </div>
     </section>
     
+    <div class="maya-divider"></div>
+    
     <section>
         <h2>Cultura y Conocimientos</h2>
+        <p>Los mayas desarrollaron un sistema de escritura jeroglífica, el más avanzado de Mesoamérica, lo que les permitió documentar su historia, conocimientos científicos y acontecimientos políticos en códices y estelas. Su sistema matemático basado en el vigesimal incluía el uso del número cero, un concepto innovador en la época.</p>
+        
+        <p>También crearon un calendario preciso basado en ciclos solares y lunares, compuesto por el calendario sagrado Tzolk'in de 260 días y el calendario Haab' de 365 días. A través de la observación astronómica, los mayas lograron predecir eclipses y otros eventos celestes con notable exactitud. Su arquitectura monumental incluyó pirámides escalonadas, templos y palacios decorados con intrincados relieves.</p>
+        
         <div class="image-container">
             <div class="image-box">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Mayan_script.jpg/800px-Mayan_script.jpg" alt="Jeroglíficos mayas">
+                <img src="/placeholder.svg?height=200&width=300" alt="Jeroglíficos mayas">
                 <p>Jeroglíficos mayas en una estela</p>
             </div>
             <div class="image-box">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Mayan_Calendar.jpg/800px-Mayan_Calendar.jpg" alt="Calendario maya">
+                <img src="/placeholder.svg?height=200&width=300" alt="Calendario maya">
                 <p>Representación del calendario maya</p>
             </div>
         </div>
     </section>
     
+    <div class="maya-divider"></div>
+    
+    <section>
+        <h2>Religión y Sociedad</h2>
+        <p>La religión maya era politeísta y giraba en torno a dioses relacionados con la naturaleza, los astros y la vida cotidiana. Entre sus deidades principales se encuentran Itzamná, dios de la sabiduría; Kukulkán, la serpiente emplumada; y Chaac, el dios de la lluvia. Creían en un complejo inframundo llamado Xibalbá, el cual estaba gobernado por dioses de la muerte y las enfermedades.</p>
+        
+        <p>Para honrar a sus dioses, los mayas realizaban rituales que incluían ofrendas, danzas y sacrificios humanos. Consideraban que estos sacrificios eran necesarios para mantener el equilibrio del cosmos y asegurar el bienestar de su sociedad.</p>
+        
+        <p>La estructura social estaba compuesta por una élite gobernante, integrada por reyes y nobles, seguida por sacerdotes, guerreros, comerciantes y artesanos. La mayoría de la población era campesina, dedicada a la agricultura y la producción de bienes básicos. El comercio era vital para la economía maya, con una red de intercambio que abarcaba toda Mesoamérica e incluía productos como cacao, jade y obsidiana.</p>
+    </section>
+    
+    <div class="maya-divider"></div>
+    
+    <section>
+        <h2>Costumbres Culturales Mayas</h2>
+        <ul class="custom-list">
+            <li><strong>El respeto a la naturaleza</strong> - Creían que todo tenía un espíritu, desde los árboles hasta los ríos. Siempre pedían permiso antes de cortar un árbol o cazar un animal.</li>
+            <li><strong>El uso del calendario sagrado</strong> - Tenían dos calendarios: el Tzolk'in (ritual, de 260 días) y el Haab' (solar, de 365 días). Les servían para organizar ceremonias, cosechas y profecías.</li>
+            <li><strong>Los sacrificios y autosacrificios</strong> - Ofrecían sangre a los dioses, ya fuera con sacrificios humanos (usualmente prisioneros de guerra) o haciéndose cortes en la lengua o en las orejas.</li>
+            <li><strong>La deformación craneal</strong> - Les deformaban el cráneo a los bebés con tablas para que tuvieran una cabeza alargada, porque se consideraba hermoso y noble.</li>
+            <li><strong>El uso de jade en los dientes</strong> - Se incrustaban piedras preciosas en los dientes como signo de estatus social.</li>
+        </ul>
+    </section>
+    
+    <div class="maya-divider"></div>
+    
     <section>
         <h2>Tradiciones Mayas</h2>
+        <ul class="custom-list">
+            <li><strong>El juego de pelota</strong> - No era solo deporte, tenía un significado religioso y político. A veces, los perdedores eran sacrificados.</li>
+            <li><strong>El Hanal Pixán</strong> - Es el equivalente al Día de Muertos en Yucatán, donde hacen altares y ofrendas a los difuntos.</li>
+            <li><strong>Las ceremonias al dios Chaac</strong> - Hacían rituales para pedir lluvia, a veces arrojando ofrendas (o hasta personas) a los cenotes.</li>
+            <li><strong>Las bodas mayas</strong> - No eran por amor, sino arregladas entre familias. El sacerdote dirigía el ritual y la esposa tenía que demostrar que sabía cocinar para ser aceptada.</li>
+            <li><strong>Los bautizos con miel</strong> - A los bebés mayas los purificaban con miel y agua en un ritual de iniciación a la vida.</li>
+        </ul>
+        
         <div class="image-container">
             <div class="image-box">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Ballcourt_Copan.jpg/800px-Ballcourt_Copan.jpg" alt="Juego de pelota maya">
+                <img src="/placeholder.svg?height=200&width=300" alt="Juego de pelota maya">
                 <p>Cancha del juego de pelota maya</p>
             </div>
             <div class="image-box">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Maya_ceremony.jpg/800px-Maya_ceremony.jpg" alt="Ceremonia maya">
+                <img src="/placeholder.svg?height=200&width=300" alt="Ceremonia maya">
                 <p>Representación de una ceremonia maya</p>
             </div>
         </div>
+    </section>
+    
+    <div class="maya-divider"></div>
+    
+    <section>
+        <h2>Decadencia y Legado</h2>
+        <p>El colapso de la civilización maya sigue siendo objeto de debate entre los especialistas. Factores como la sobrepoblación, el agotamiento de los recursos naturales, conflictos internos y sequías prolongadas han sido señalados como posibles causas del abandono de muchas ciudades en el periodo Clásico. Sin embargo, la cultura maya no desapareció por completo, sino que continuó evolucionando en distintas regiones.</p>
+        
+        <p>A pesar de la conquista española en el siglo XVI, los mayas han preservado muchas de sus tradiciones y su idioma. Actualmente, millones de personas en México, Guatemala y Belice continúan hablando lenguas mayas y practicando costumbres heredadas de sus ancestros.</p>
+        
+        <p>El legado arquitectónico de los mayas sigue asombrando al mundo, con sitios arqueológicos como Tikal, Uxmal y Palenque, que son Patrimonio de la Humanidad y reciben miles de visitantes cada año. Su contribución a la astronomía, la matemática y la escritura ha sido ampliamente reconocida, y sus códices y monumentos continúan siendo estudiados por expertos.</p>
+    </section>
+    
+    <div class="maya-divider"></div>
+    
+    <section class="references">
+        <h2>Referencias</h2>
+        <ul>
+            <li>Coe, M. D., & Houston, S. (2015). The Maya. Thames & Hudson.</li>
+            <li>Demarest, A. (2004). Ancient Maya: The Rise and Fall of a Rainforest Civilization. Cambridge University Press.</li>
+            <li>Martin, S., & Grube, N. (2008). Chronicle of the Maya Kings and Queens: Deciphering the Dynasties of the Ancient Maya. Thames & Hudson.</li>
+            <li>Schele, L., & Freidel, D. (1990). A Forest of Kings: The Untold Story of the Ancient Maya. William Morrow & Co.</li>
+            <li>Sharer, R. J., & Traxler, L. P. (2006). The Ancient Maya. Stanford University Press.</li>
+        </ul>
     </section>
     
     <footer style="text-align: center; margin-top: 40px; padding: 20px; color: #666; font-size: 0.9rem;">
